@@ -1,0 +1,20 @@
+CartContainer:
+  inputs:
+    [product ids]
+
+  state:
+    product ids
+    isEmpty - display empty cart
+  
+  hooks:
+    effect - keep shopping cart data synchronised with state
+
+
+CartProduct:
+  inputs:
+    product id
+    remove product callback prop
+  
+  state:
+    quantity
+  

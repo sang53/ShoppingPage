@@ -1,0 +1,9 @@
+inputs (hardcode links & names):
+  number of items in shopping cart
+  current page? - input from url/router
+
+memo:
+  memoise to only re-render if shopping cart changes
+
+output:
+  div with links + shopping cart number

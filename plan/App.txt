@@ -1,0 +1,10 @@
+states:
+  data - [products] - may need to be external if routing remounts app
+
+Output:
+  Title/Heading
+  NavBar
+  Outlet for routing
+  Footer? if necessary
+
+useEffect - fetch data from API on mount

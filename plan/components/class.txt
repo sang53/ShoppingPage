@@ -1,0 +1,8 @@
+class Product:
+  id
+  name
+  desc
+  price
+  category
+  image
+  rating

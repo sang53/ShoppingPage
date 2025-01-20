@@ -1,0 +1,7 @@
+States:
+  isLoading - if products are not stored yet, display loading state
+  productIds - [product Ids to display in carousel]
+  currIdx - currently displayed idx
+
+returns:
+  div with carousel + left & right buttons

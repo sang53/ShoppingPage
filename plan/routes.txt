@@ -1,0 +1,16 @@
+Base - title & NavBar 
+
+Routes - components
+/ - carousel, information
+
+/categories - DisplayContainer => PreviewBox of categories
+/categories/:name - DisplayContainer => PreviewBox of prodcuts in category "name"
+/products - DisplayContainer => PreviewBox of prodcuts
+
+/products/:id -  ProductDisplay of specific product
+
+/cart - CartContainer => CartProduct of each product
+
+Error Pages:
+/* - general error display page
+/categories/* & /products/* - specific category/product error page

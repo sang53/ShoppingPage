@@ -1,0 +1,11 @@
+DisplayContainer:
+  inputs:
+    product ids/categories to display
+  
+  states: 
+    sort by - asc/desc
+    isLoading
+
+PreviewBox:
+  inputs:
+    product id or category to display
