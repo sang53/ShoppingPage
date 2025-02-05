@@ -1,0 +1,16 @@
+.navButton {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: background-color 100ms;
+
+  &:hover {
+    background-color: var(--navbar-hover);
+  }
+}
+
+.active {
+  composes: navButton;
+  background-color: var(--navbar-active);
+}

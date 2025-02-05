@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders NavBar elements as expected 1`] = `
+<div>
+  <nav
+    class="flex-center gap-1rem no-select"
+  >
+    <a
+      aria-current="page"
+      class="_active_1ee360"
+      data-discover="true"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="_navButton_1ee360"
+      data-discover="true"
+      href="/categories"
+    >
+      Categories
+    </a>
+    <a
+      class="_navButton_1ee360"
+      data-discover="true"
+      href="/products"
+    >
+      Products
+    </a>
+    <a
+      class="_navButton_1ee360"
+      data-discover="true"
+      href="/cart"
+    >
+      Cart(
+      0
+      )
+    </a>
+  </nav>
+</div>
+`;
