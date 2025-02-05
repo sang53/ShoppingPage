@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header elements display as expected 1`] = `
+<div>
+  <div
+    class="z-idx-1 _headerWrapper_218396"
+  >
+    <div
+      class="flex pad-1rem"
+    >
+      <h1
+        class="_heading_218396"
+      >
+        Fake Shopping Project
+      </h1>
+      <nav
+        data-testid="mock-navbar"
+      >
+        Mock NavBar
+      </nav>
+    </div>
+    <hr
+      class="_divider_218396"
+    />
+  </div>
+</div>
+`;
