@@ -1,0 +1,27 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Main Landing Page elements display as expected 1`] = `
+<div>
+  <div
+    class="flex-column-center gap-1rem text-center"
+  >
+    <h1>
+      Welcome to Fake Shopping Project!
+    </h1>
+    <p>
+      Feel free to browse by category or product!
+    </p>
+    <p>
+      This project was made with React & React-router as part of The Odin Project
+    </p>
+    <p>
+      Here are some random products to view below!
+    </p>
+  </div>
+  <div
+    data-testid="mock-carousel"
+  >
+    Carousel
+  </div>
+</div>
+`;
