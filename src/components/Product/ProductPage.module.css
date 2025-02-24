@@ -1,0 +1,27 @@
+.main {
+  max-height: 90vh;
+  max-width: 60vw;
+
+  > img {
+    min-height: 0;
+    height: auto;
+    flex-shrink: 1;
+    padding: 1rem;
+    background-color: var(--product-img-bgc);
+    border-radius: 15px;
+  }
+
+  > div,
+  h2 {
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  input[type="number"] {
+    max-width: 5ch;
+  }
+}
+
+.desc > p {
+  margin-bottom: 0.5rem;
+}

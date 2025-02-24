@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`product page elements displayed as expected 1`] = `
+<div>
+  <div
+    class="flex-column-center pad-1rem gap-1rem _main_ea36a0"
+  >
+    <h2>
+      Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+    </h2>
+    <img
+      alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      src="#"
+    />
+    <div
+      class="_desc_ea36a0"
+    >
+      <p>
+        Your perfect pack for everyday use and walks in the forest.
+      </p>
+    </div>
+    <div>
+      $109.95
+    </div>
+    <div>
+      Rating: 
+      3.9
+       / 5 (
+      120
+       Votes)
+    </div>
+    <div>
+      <label
+        for="total"
+      >
+        Total: 
+      </label>
+      <input
+        class="total"
+        id="total"
+        readonly=""
+        type="text"
+        value="$109.95"
+      />
+    </div>
+    <div>
+      <label
+        for="add-cart"
+      >
+        Add To Cart: 
+      </label>
+      <input
+        id="add-cart"
+        min="1"
+        type="number"
+        value="1"
+      />
+      <button>
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;
