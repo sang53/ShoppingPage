@@ -1,1 +1,10 @@
 shoppingCart = {product id: quantity}
+
+class Product:
+  id : int
+  name : string
+  desc : string
+  price : float
+  category : string
+  image : string (URL)
+  rating : [number: float, count: int]

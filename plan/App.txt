@@ -7,4 +7,5 @@ Output:
   Outlet for routing
   Footer? if necessary
 
-useEffect - fetch data from API on mount
+hooks: 
+  useEffect - fetch data from API on mount
