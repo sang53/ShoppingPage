@@ -1,0 +1,111 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`categories > categories display as expected 1`] = `
+<div>
+  <div
+    class="flex gap-1rem pad-1rem _displayContainer_acfe5e"
+  >
+    <a
+      class="product"
+      data-discover="true"
+      href="/categories/1"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Example Category"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Example Category
+        </div>
+      </div>
+    </a>
+    <a
+      class="product"
+      data-discover="true"
+      href="/categories/10"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Example Category1"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Example Category1
+        </div>
+      </div>
+    </a>
+  </div>
+  <div
+    data-testid="location-display"
+  >
+    /
+  </div>
+</div>
+`;
+
+exports[`products > products display as expected 1`] = `
+<div>
+  <div
+    class="flex gap-1rem pad-1rem _displayContainer_acfe5e"
+  >
+    <a
+      class="product"
+      data-discover="true"
+      href="/products/1"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Example Category"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Example Category
+        </div>
+        <div>
+          32.94
+        </div>
+      </div>
+    </a>
+    <a
+      class="product"
+      data-discover="true"
+      href="/products/10"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Example Category1"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Example Category1
+        </div>
+        <div>
+          32.94
+        </div>
+      </div>
+    </a>
+  </div>
+  <div
+    data-testid="location-display"
+  >
+    /
+  </div>
+</div>
+`;

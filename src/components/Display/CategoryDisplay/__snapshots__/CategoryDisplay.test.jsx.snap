@@ -1,0 +1,66 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`displays all categories correctly > all categories elements are displayed as expected 1`] = `
+<div>
+  <h1>
+    Categories
+  </h1>
+  <div
+    class="flex gap-1rem pad-1rem _displayContainer_acfe5e"
+  >
+    <a
+      class="product"
+      data-discover="true"
+      href="/categories/men's clothing"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Men's Clothing"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Men's Clothing
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`displays single category correctly > single category elements are displayed as expected 1`] = `
+<div>
+  <h1>
+    Men's Clothing
+  </h1>
+  <div
+    class="flex gap-1rem pad-1rem _displayContainer_acfe5e"
+  >
+    <a
+      class="product"
+      data-discover="true"
+      href="/products/1"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+        </div>
+        <div>
+          $109.95
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
