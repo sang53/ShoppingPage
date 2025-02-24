@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`snapshot tests > cart with products 1`] = `
+<div>
+  <div
+    class="_cartContainer_6fd72c"
+  >
+    <h1>
+      Shopping Cart:
+    </h1>
+    <div>
+      id: 
+      1
+      ; quantity:
+      2
+    </div>
+    <div>
+      id: 
+      6
+      ; quantity:
+      4
+    </div>
+    <div>
+      <button>
+        Remove All
+      </button>
+      <button>
+        Checkout All
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`snapshot tests > empty cart 1`] = `
+<div>
+  <div
+    class="_cartContainer_6fd72c"
+  >
+    <h1>
+      Shopping Cart:
+    </h1>
+    <div>
+      Your Cart is Empty!
+    </div>
+    <div>
+      <button>
+        Remove All
+      </button>
+      <button>
+        Checkout All
+      </button>
+    </div>
+  </div>
+</div>
+`;

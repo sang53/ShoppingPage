@@ -1,0 +1,62 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`cart product elements displayed as expected 1`] = `
+<div>
+  <div
+    class="gap-1rem pad-1rem _cartItem_3ded9d"
+  >
+    <img
+      alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      src="#"
+    />
+    <div
+      class="_info_3ded9d"
+    >
+      <h1>
+        <a
+          data-discover="true"
+          href="/products/1"
+        >
+          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+        </a>
+      </h1>
+      <div>
+        $109.95
+      </div>
+      <div>
+        <label
+          for="quantity-1"
+        >
+          Quantity:
+        </label>
+        <input
+          id="quantity-1"
+          min="0"
+          type="number"
+          value="3"
+        />
+      </div>
+      <div>
+        <label
+          for="total"
+        >
+          Total: 
+        </label>
+        <input
+          class="total"
+          id="total"
+          readonly=""
+          type="text"
+          value="$329.85"
+        />
+      </div>
+      <button>
+        Checkout
+      </button>
+      <button>
+        Remove
+      </button>
+    </div>
+  </div>
+</div>
+`;
