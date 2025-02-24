@@ -1,0 +1,38 @@
+.arrow {
+  background-color: var(--arrow-bgc);
+  color: var(--arrow-bgc);
+  opacity: var(--arrow-op);
+  border: none;
+
+  position: sticky;
+  transform: translateY(50%);
+  align-self: center;
+  border-radius: 20px;
+
+  will-change: contents;
+  transition: transform 0.2s, opacity 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1) translateY(50%);
+    opacity: var(--arrow-op-hover);
+  }
+
+  > svg {
+    max-width: none;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.arrowLeft {
+  composes: arrow;
+  left: 1rem;
+  bottom: 50%;
+}
+
+.arrowRight {
+  composes: arrow;
+  right: 1rem;
+  bottom: 50%;
+}

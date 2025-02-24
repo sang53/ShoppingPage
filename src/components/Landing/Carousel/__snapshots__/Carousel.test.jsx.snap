@@ -1,0 +1,82 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`carousel elements display correctly > carousel products display as expected 1`] = `
+<div>
+  <div
+    class="flex gap-1rem relative _carousel_9e3f0b"
+    id="carousel"
+  >
+    <button
+      class="no-select z-idx-1 _arrowLeft_1faf2d"
+    >
+      <svg
+        fill="#ffffff"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Left Arrow
+        </title>
+        <path
+          d="M559.19-258.69 337.89-480l221.3-221.31 38.92 39.73L416.54-480l181.57 181.58-38.92 39.73Z"
+        />
+      </svg>
+    </button>
+    <a
+      class="product"
+      data-discover="true"
+      href="/products/1"
+      id="carousel-0"
+    >
+      <div
+        class="product-img"
+      >
+        <img
+          alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+          src="#"
+        />
+      </div>
+      <div>
+        <div>
+          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+        </div>
+        <div>
+          $
+          109.95
+        </div>
+      </div>
+    </a>
+    <div
+      class="no-select z-idx-1 flex gap-1rem _jumpContainer_17f208"
+      id="jump-buttons-container"
+    >
+      <button
+        aria-current="carousel"
+        class="_currJumpButton_17f208"
+      >
+        1
+      </button>
+    </div>
+    <button
+      class="no-select z-idx-1 _arrowRight_1faf2d"
+    >
+      <svg
+        fill="#ffffff"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Right Arrow
+        </title>
+        <path
+          d="M519.46-480 337.89-661.58l38.92-39.73L598.11-480l-221.3 221.31-38.92-39.73L519.46-480Z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
