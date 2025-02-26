@@ -1,0 +1,56 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`category item snapshot 1`] = `
+<div>
+  <a
+    class="product"
+    data-discover="true"
+    href="/categories/men's clothing"
+  >
+    <div
+      class="product-img"
+    >
+      <img
+        alt="Men's Clothing"
+        src="#"
+      />
+    </div>
+    <div>
+      <div
+        id="title"
+      >
+        Men's Clothing
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`product item snapshot 1`] = `
+<div>
+  <a
+    class="product"
+    data-discover="true"
+    href="/products/1"
+  >
+    <div
+      class="product-img"
+    >
+      <img
+        alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+        src="#"
+      />
+    </div>
+    <div>
+      <div
+        id="title"
+      >
+        Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+      </div>
+      <div>
+        $109.95
+      </div>
+    </div>
+  </a>
+</div>
+`;

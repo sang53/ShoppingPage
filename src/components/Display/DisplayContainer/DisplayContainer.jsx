@@ -1,20 +1,10 @@
 import classes from "./DisplayContainer.module.css";
 import PropTypes from "prop-types";
-import { Link } from "react-router";
+import DisplayItem from "../DisplayItem/DisplayItem";
 
 export default function DisplayContainer({ displayItems }) {
   const output = displayItems.map((obj) => {
-    return (
-      <Link to={obj.link} key={obj.id} className="product">
-        <div className="product-img">
-          <img src={obj.image} alt={obj.title} />
-        </div>
-        <div>
-          <div>{obj.title}</div>
-          {obj.price && <div>{obj.price}</div>}
-        </div>
-      </Link>
-    );
+    return <DisplayItem key={obj.id} obj={obj} />;
   });
   return (
     <div className={"flex gap-1rem pad-1rem " + classes.displayContainer}>

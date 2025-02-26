@@ -19,7 +19,9 @@ exports[`categories > categories display as expected 1`] = `
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Example Category
         </div>
       </div>
@@ -38,7 +40,9 @@ exports[`categories > categories display as expected 1`] = `
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Example Category1
         </div>
       </div>
@@ -71,7 +75,9 @@ exports[`products > products display as expected 1`] = `
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Example Category
         </div>
         <div>
@@ -93,7 +99,9 @@ exports[`products > products display as expected 1`] = `
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Example Category1
         </div>
         <div>

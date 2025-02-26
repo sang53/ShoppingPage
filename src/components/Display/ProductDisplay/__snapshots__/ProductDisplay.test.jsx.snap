@@ -5,31 +5,37 @@ exports[`product displayed as expected 1`] = `
   <h1>
     All Products
   </h1>
-  <div
-    class="flex gap-1rem pad-1rem _displayContainer_acfe5e"
-  >
-    <a
-      class="product"
-      data-discover="true"
-      href="/products/1"
+  <div>
+    <div
+      data-testid="title"
     >
-      <div
-        class="product-img"
-      >
-        <img
-          alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
-          src="#"
-        />
-      </div>
-      <div>
-        <div>
-          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-        </div>
-        <div>
-          $109.95
-        </div>
-      </div>
-    </a>
+      Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+    </div>
   </div>
 </div>
+`;
+
+exports[`sorts into order > default order category 1`] = `
+[
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Mens Cotton Jacket",
+  "Mens Casual Slim Fit",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Solid Gold Petite Micropave ",
+  "White Gold Plated Princess",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Opna Women's Short Sleeve Moisture",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+]
 `;
