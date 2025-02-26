@@ -29,12 +29,17 @@ export default function ProductPage() {
             return <p key={idx}>{sent + "."}</p>;
           })}
       </div>
-      <div>{Helper.padDecimal(product.price)}</div>
-      <div>
-        Rating: {product.rating.rate} / 5 ({product.rating.count} Votes)
+      <div className="bold">
+        <i>{Helper.padDecimal(product.price)}</i>
       </div>
       <div>
-        <label htmlFor="total">Total: </label>
+        <b>Rating: </b>
+        {product.rating.rate} / 5 ({product.rating.count} Votes)
+      </div>
+      <div>
+        <label htmlFor="total" className="bold">
+          Total:
+        </label>
         <input
           id="total"
           className="total"
@@ -45,7 +50,9 @@ export default function ProductPage() {
         />
       </div>
       <div>
-        <label htmlFor="add-cart">Add To Cart: </label>
+        <label htmlFor="add-cart" className="bold">
+          Add To Cart:{" "}
+        </label>
         <input
           id="add-cart"
           type="number"

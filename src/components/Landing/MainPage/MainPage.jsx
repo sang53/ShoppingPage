@@ -1,9 +1,14 @@
 import Carousel from "../Carousel/Carousel.jsx";
+import classes from "./MainPage.module.css";
 
 export default function MainPage() {
   return (
     <>
-      <div className="flex-column-center gap-1rem text-center">
+      <div
+        className={
+          "flex-column-center gap-1rem text-center " + classes.container
+        }
+      >
         <h1>Welcome to Fake Shopping Project!</h1>
         <p>Feel free to browse by category or product!</p>
         <p>

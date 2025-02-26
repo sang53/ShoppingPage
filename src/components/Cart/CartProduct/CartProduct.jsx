@@ -33,9 +33,13 @@ export default function CartProduct({ id, quantity }) {
         <h1>
           <Link to={`products/${id}`}>{product.title}</Link>
         </h1>
-        <div>{Helper.padDecimal(product.price)}</div>
         <div>
-          <label htmlFor={`quantity-${product.id}`}>Quantity:</label>
+          <i>{Helper.padDecimal(product.price)}</i>
+        </div>
+        <div>
+          <label htmlFor={`quantity-${product.id}`} className="bold">
+            Quantity:
+          </label>
           <input
             id={`quantity-${product.id}`}
             type="number"
@@ -58,7 +62,9 @@ export default function CartProduct({ id, quantity }) {
           />
         </div>
         <div>
-          <label htmlFor="total">Total: </label>
+          <label htmlFor="total" className="bold">
+            Total:
+          </label>
           <input
             id="total"
             className="total"

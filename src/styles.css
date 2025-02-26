@@ -57,8 +57,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 700;
   text-wrap: balance;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 #root {
@@ -88,8 +105,12 @@ h6 {
 
   --button-bgc: #e0e0e1;
   --button-bgc-hover: #f5f5f5;
-  --button-border: #e7b988;
+  --button-border: #aaaaaa;
   --button-shadow: 0px 0px 3px #ebc69f;
+
+  font-size: 24px;
+  font-family: "Raleway", system-ui, sans-serif;
+  font-weight: 500;
 }
 
 #main {
@@ -138,6 +159,10 @@ h6 {
   z-index: 1;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 .product {
   border-radius: 10px;
   will-change: contents;
@@ -175,6 +200,10 @@ h6 {
   > img {
     max-height: 100%;
   }
+}
+
+input {
+  vertical-align: top;
 }
 
 input.total {
