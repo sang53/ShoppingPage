@@ -14,3 +14,10 @@
   composes: navButton;
   background-color: var(--navbar-active);
 }
+
+.navBar {
+  @media (max-width: 600px) {
+    font-size: 16px;
+    gap: 0.5rem;
+  }
+}

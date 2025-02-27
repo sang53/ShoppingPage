@@ -1,6 +1,6 @@
 .main {
   max-height: 90vh;
-  max-width: 60vw;
+  width: clamp(400px, 60vw, 1800px);
 
   > img {
     min-height: 0;

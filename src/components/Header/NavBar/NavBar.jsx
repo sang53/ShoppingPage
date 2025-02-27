@@ -6,7 +6,7 @@ import { CartItems } from "../../../contexts/CartContext/CartContext";
 export default function NavBar() {
   const cartSize = Object.keys(use(CartItems)).length;
   return (
-    <nav className="flex-center gap-1rem no-select">
+    <nav className={"flex-center gap-1rem no-select " + classes.navBar}>
       <NavLink
         to="/"
         className={({ isActive }) =>
