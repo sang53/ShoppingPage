@@ -1,5 +1,4 @@
 .cartItem {
-  height: 500px;
   width: clamp(400px, 50vw, 1000px);
   background-color: var(--cart-bgc);
   border-radius: 10px;
