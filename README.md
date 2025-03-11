@@ -1,8 +1,11 @@
 ## **Shopping Cart Project**
 
-This project was made for The Odin Project to learn react, single page applications, browser based routing & react testing
+_Portfolio link: https://portfolio-sang-won-cho.netlify.app/_
+_Deployed link: https://fake-shop-site.netlify.app/_
 
-In addition to the original project specifications _(shown below)_, I have added functionality to improve the application
+This project was made for The Odin Project to learn react, single page applications, browser based routing & react testing.
+
+In addition to the original project specifications _(shown below)_, I have added functionality to improve the application.
 
 Planning & reflection files are in plan/
 
