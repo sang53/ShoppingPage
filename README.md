@@ -1,4 +1,4 @@
-## **Shopping Cart Project**
+## **Shopping Page Project**
 
 _Portfolio link: https://portfolio-sang-won-cho.netlify.app/_
 _Deployed link: https://fake-shop-site.netlify.app/_
