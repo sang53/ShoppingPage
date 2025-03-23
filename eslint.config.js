@@ -36,6 +36,7 @@ export default [
         { allowConstantExport: true },
       ],
       "react-compiler/react-compiler": "error",
+      "no-unused-vars": ["error", { varsIgnorePattern: "^_" }],
     },
   },
 ];

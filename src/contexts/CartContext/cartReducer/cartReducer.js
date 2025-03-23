@@ -28,7 +28,7 @@ function setQuantity(items, id, quantity) {
   if (!items[id]) throw new Error("Product Not in Cart\nid: " + id);
 
   if (quantity === 0) {
-    const { [id]: _, ...newItems } = items;
+    const { [id]: _oldQuant, ...newItems } = items;
     return newItems;
   } else return { ...items, [id]: quantity };
 }
