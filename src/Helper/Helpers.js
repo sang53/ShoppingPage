@@ -6,9 +6,13 @@ export default (() => {
   }
 
   async function handleFetch(url) {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error("Status Code: " + response.status);
-    return await response.json();
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error("Status Code: " + response.status);
+      return await response.json();
+    } catch (error) {
+      console.log("Error: " + error);
+    }
   }
 
   function getTotal(price, quantity) {

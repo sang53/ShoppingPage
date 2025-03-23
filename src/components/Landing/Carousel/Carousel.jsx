@@ -30,6 +30,7 @@ export default function Carousel({ displayNum = 11 }) {
   }, [carouselIdxs, products]);
 
   useEffect(() => {
+    if (!products) console.log("Error: Fetch not successful");
     if (products.length && !carouselIdxs.length)
       setCarouselIdxs(getRandomIds(products.length, displayNum));
   }, [products, displayNum, carouselIdxs]);
