@@ -21,10 +21,13 @@ exports[`cart product elements displayed as expected 1`] = `
         </a>
       </h1>
       <div>
-        $109.95
+        <i>
+          $109.95
+        </i>
       </div>
       <div>
         <label
+          class="bold"
           for="quantity-1"
         >
           Quantity:
@@ -38,9 +41,10 @@ exports[`cart product elements displayed as expected 1`] = `
       </div>
       <div>
         <label
+          class="bold"
           for="total"
         >
-          Total: 
+          Total:
         </label>
         <input
           class="total"

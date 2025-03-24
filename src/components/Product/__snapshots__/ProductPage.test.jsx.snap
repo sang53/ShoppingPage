@@ -19,11 +19,17 @@ exports[`product page elements displayed as expected 1`] = `
         Your perfect pack for everyday use and walks in the forest.
       </p>
     </div>
-    <div>
-      $109.95
+    <div
+      class="bold"
+    >
+      <i>
+        $109.95
+      </i>
     </div>
     <div>
-      Rating: 
+      <b>
+        Rating: 
+      </b>
       3.9
        / 5 (
       120
@@ -31,9 +37,10 @@ exports[`product page elements displayed as expected 1`] = `
     </div>
     <div>
       <label
+        class="bold"
         for="total"
       >
-        Total: 
+        Total:
       </label>
       <input
         class="total"
@@ -45,9 +52,11 @@ exports[`product page elements displayed as expected 1`] = `
     </div>
     <div>
       <label
+        class="bold"
         for="add-cart"
       >
-        Add To Cart: 
+        Add To Cart:
+         
       </label>
       <input
         id="add-cart"

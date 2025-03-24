@@ -3,16 +3,16 @@
 exports[`Main Landing Page elements display as expected 1`] = `
 <div>
   <div
-    class="flex-column-center gap-1rem text-center"
+    class="flex-column-center gap-1rem text-center _container_165a7b"
   >
     <h1>
-      Welcome to Fake Shopping Project!
+      Welcome to my Shopping Project!
     </h1>
     <p>
       Feel free to browse by category or product!
     </p>
     <p>
-      This project was made with React & React-router as part of The Odin Project
+      This project was made with React & React-router as part of The Odin Project by Sang Won Cho.
     </p>
     <p>
       Here are some random products to view below!

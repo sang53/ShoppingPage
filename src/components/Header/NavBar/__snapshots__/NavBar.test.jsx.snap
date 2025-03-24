@@ -3,7 +3,7 @@
 exports[`renders NavBar elements as expected 1`] = `
 <div>
   <nav
-    class="flex-center gap-1rem no-select"
+    class="flex-center no-select _navBar_1ee360"
   >
     <a
       aria-current="page"

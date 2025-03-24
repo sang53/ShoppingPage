@@ -22,7 +22,9 @@ exports[`displays all categories correctly > all categories elements are display
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Men's Clothing
         </div>
       </div>
@@ -53,7 +55,9 @@ exports[`displays single category correctly > single category elements are displ
         />
       </div>
       <div>
-        <div>
+        <div
+          id="title"
+        >
           Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
         </div>
         <div>

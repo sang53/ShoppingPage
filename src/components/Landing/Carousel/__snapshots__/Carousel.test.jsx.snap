@@ -49,7 +49,7 @@ exports[`carousel elements display correctly > carousel products display as expe
       </div>
     </a>
     <div
-      class="no-select z-idx-1 flex gap-1rem _jumpContainer_17f208"
+      class="no-select z-idx-1 flex _jumpContainer_17f208"
       id="jump-buttons-container"
     >
       <button

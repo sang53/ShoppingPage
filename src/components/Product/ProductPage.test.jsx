@@ -29,7 +29,9 @@ test("loading page when data is empty", () => {
 
 test("error page when product id not found", () => {
   renderProduct(100);
-  expect(screen.getByRole("heading")).toHaveTextContent(/error/i);
+  expect(screen.getByRole("heading")).toHaveTextContent(
+    /something went wrong/i
+  );
 });
 
 test("product page elements displayed as expected", () => {
