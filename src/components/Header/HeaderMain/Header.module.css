@@ -1,5 +1,6 @@
 .heading {
   font-size: 38px;
+  margin-bottom: 0.5rem;
 }
 
 .divider {
@@ -7,7 +8,7 @@
 }
 
 .headerWrapper {
-  min-width: 100%;
+  width: 100%;
   background-color: var(--header-bgc);
   position: sticky;
   top: 0;

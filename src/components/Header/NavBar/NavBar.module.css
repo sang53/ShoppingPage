@@ -8,6 +8,10 @@
   &:hover {
     background-color: var(--navbar-hover);
   }
+
+  @media (max-width: 700px) {
+    padding: 0.25rem 0.5rem;
+  }
 }
 
 .active {
@@ -16,6 +20,8 @@
 }
 
 .navBar {
+  gap: 1rem;
+
   @media (max-width: 600px) {
     font-size: 16px;
     gap: 0.5rem;

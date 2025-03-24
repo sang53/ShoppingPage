@@ -4,7 +4,7 @@ import { memo } from "react";
 
 export default function Jump({ idx, onClick, displayNum }) {
   const buttons = [];
-  const className = "no-select z-idx-1 flex gap-1rem " + classes.jumpContainer;
+  const className = "no-select z-idx-1 flex " + classes.jumpContainer;
 
   for (let i = 0; i < displayNum; i++) {
     buttons.push(

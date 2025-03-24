@@ -4,6 +4,7 @@
   top: 100%;
   transform: translate(50%, 80%);
   align-self: center;
+  gap: 1rem;
 
   background-color: var(--jump-container);
 
@@ -15,6 +16,10 @@
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 750px) {
+    gap: 0.5rem;
   }
 }
 
