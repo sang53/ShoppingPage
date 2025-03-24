@@ -4,10 +4,11 @@ import { useLocation } from "react-router";
 import { vi } from "vitest";
 
 // for use in components that call global fetch function
-export function mockFetch({ success = true, value = [] } = {}) {
+export function mockFetch({ success = true, value = [], status = 200 } = {}) {
   const fetchMock = vi.fn(() => {
     return Promise.resolve({
       ok: success,
+      status: status,
       json: () => Promise.resolve(value),
     });
   });

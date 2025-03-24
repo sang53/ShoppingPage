@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
-import Helpers from "./Helpers";
+import Helpers, { checkout } from "./Helpers";
 import { mockFetch } from "../test/utils/utils";
+import { vi } from "vitest";
 
 describe("pads price to 2 decimals", () => {
   test("takes integer prices", () => {
@@ -35,5 +36,64 @@ test("fetches data from correct URL", async () => {
 
 test("handles fetch error", async () => {
   mockFetch({ success: false });
-  await expect(Helpers.getProduct()).rejects.toThrowError(/status/i);
+  const spyError = vi.spyOn(console, "error");
+  await Helpers.getProduct();
+  expect(spyError).toHaveBeenCalledOnce();
+});
+
+describe("checkout works properly", () => {
+  const testCart = { 4: 2, 5: 1 };
+
+  function mockCheckout(fetchOptions) {
+    mockFetch(fetchOptions);
+    const button = document.createElement("button");
+    button.textContent = "Test";
+    const mockDispatch = vi.fn();
+    const promise = checkout(button, testCart, mockDispatch);
+    return [button, promise, mockDispatch];
+  }
+
+  test("Empty Cart", async () => {
+    const spyLog = vi.spyOn(console, "log");
+    await checkout(null, {}, null);
+    expect(spyLog).toHaveBeenCalledExactlyOnceWith("Shopping Cart Empty");
+  });
+
+  test("Successful PUT", async () => {
+    const [button, promise, mockDispatch] = mockCheckout();
+    expect(button.disabled).toBeTruthy();
+    expect(button).toHaveTextContent(/checking out/i);
+    expect(fetch).toHaveBeenCalledOnce();
+    await promise;
+    expect(button.disabled).toBeFalsy();
+    expect(button).toHaveTextContent(/test/i);
+    expect(mockDispatch).toHaveBeenCalledExactlyOnceWith({ type: "reset" });
+  });
+
+  test("Unsuccessful PUT", async () => {
+    const [_button, promise, mockDispatch] = mockCheckout({ status: 400 });
+    const spyError = vi.spyOn(console, "error");
+    await promise;
+    expect(mockDispatch).not.toHaveBeenCalled();
+    expect(spyError).toHaveBeenCalledOnce();
+  });
+
+  test("Unexpected status response", async () => {
+    const [_button, promise, mockDispatch] = mockCheckout({ status: 404 });
+    const spyLog = vi.spyOn(console, "log");
+    await promise;
+    expect(mockDispatch).not.toHaveBeenCalled();
+    expect(spyLog).toHaveBeenCalledOnce();
+  });
+
+  test("Fetch Throws Error", async () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(() => Promise.reject(new Error("Test")))
+    );
+    const spyError = vi.spyOn(console, "error");
+    const mockDispatch = vi.fn();
+    await checkout(document.createElement("button"), testCart, mockDispatch);
+    expect(spyError).toHaveBeenCalledExactlyOnceWith("Test");
+  });
 });

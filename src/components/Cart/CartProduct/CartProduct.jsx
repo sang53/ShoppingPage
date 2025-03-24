@@ -4,7 +4,7 @@ import { CartReducer } from "../../../contexts/CartContext/CartContext";
 import { Products } from "../../../contexts/Data/DataContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router";
-import Helper from "../../../Helper/Helpers";
+import Helper, { checkout } from "../../../Helper/Helpers";
 
 export default function CartProduct({ id, quantity }) {
   const product = use(Products).find((obj) => obj.id === id);
@@ -74,7 +74,13 @@ export default function CartProduct({ id, quantity }) {
             value={Helper.getTotal(quantity, product.price)}
           />
         </div>
-        <button>Checkout</button>
+        <button
+          onClick={(e) => {
+            checkout(e.target, { [id]: quantity }, cartDispatch);
+          }}
+        >
+          Checkout
+        </button>
         <button onClick={() => cartDispatch({ type: "set", id, quantity: 0 })}>
           Remove
         </button>
