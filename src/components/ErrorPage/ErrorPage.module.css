@@ -1,0 +1,10 @@
+.container {
+  margin-top: 3rem;
+}
+
+.image {
+  max-width: 30vw;
+  min-width: 400px;
+  border-radius: 15%;
+  box-shadow: 0 0 5px 0px black;
+}

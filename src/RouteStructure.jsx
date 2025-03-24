@@ -5,6 +5,7 @@ import CategoryDisplay from "./components/Display/CategoryDisplay/CategoryDispla
 import ProductDisplay from "./components/Display/ProductDisplay/ProductDisplay";
 import ProductPage from "./components/Product/ProductPage";
 import CartContainer from "./components/Cart/CartContainer/CartContainer";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 export default function RouteStructure() {
   return (
@@ -20,6 +21,7 @@ export default function RouteStructure() {
             <Route path=":id" element={<ProductPage />} />
           </Route>
           <Route path="cart" element={<CartContainer />} />
+          <Route path="/*" element={<ErrorPage message="Page Not Found" />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { Products } from "../../contexts/Data/DataContext";
 import { CartReducer } from "../../contexts/CartContext/CartContext";
 import Helper from "../../Helper/Helpers";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export default function ProductPage() {
   const { id } = useParams();
@@ -15,7 +16,7 @@ export default function ProductPage() {
   if (!productData.length) return <h1>Loading...</h1>;
 
   const product = productData.find((obj) => obj.id === +id);
-  if (!product) return <h1>Error: Product Not Found (id: {id})</h1>;
+  if (!product) return <ErrorPage message={`Product id: ${id} not found`} />;
 
   return (
     <div className={"flex-column-center pad-1rem gap-1rem " + classes.main}>
