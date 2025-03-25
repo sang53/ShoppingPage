@@ -1,7 +1,7 @@
 ## **Shopping Page Project**
 
-_Portfolio link: https://portfolio-sang-won-cho.netlify.app/_
-_Deployed link: https://fake-shop-site.netlify.app/_
+_[Portfolio link](https://sang53.github.io)_
+_[Deploy link](https://sang53.github.io/ShoppingPage/)_
 
 This project was made for The Odin Project to learn react, single page applications, browser based routing & react testing.
 
