@@ -8,7 +8,7 @@ import CartContainer from "./components/Cart/CartContainer/CartContainer";
 
 export default function RouteStructure() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ShoppingPage/">
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<MainPage />} />
