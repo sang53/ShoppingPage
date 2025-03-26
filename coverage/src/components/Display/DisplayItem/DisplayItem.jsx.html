@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/Display/CategoryDisplay/CategoryDisplay.jsx</title>
+    <title>Code coverage report for src/components/Display/DisplayItem/DisplayItem.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../../prettify.css" />
     <link rel="stylesheet" href="../../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/components/Display/CategoryDisplay</a> CategoryDisplay.jsx</h1>
+        <h1><a href="../../../../index.html">All files</a> / <a href="index.html">src/components/Display/DisplayItem</a> DisplayItem.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
@@ -86,52 +86,55 @@
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useParams } from "react-router";
-import DisplayContainer from "../DisplayContainer/DisplayContainer";
-import { Products } from "../../../contexts/Data/DataContext";
-import { use } from "react";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import PropTypes from "prop-types";
+import { Link } from "react-router";
 import DisplayObj from "../DisplayObj/DisplayObj";
-import ErrorPage from "../../ErrorPage/ErrorPage";
+import { memo } from "react";
 &nbsp;
-export default function CategoryDisplay() {
-  const { category } = useParams();
-  const displayItems = category
-    ? DisplayObj.getCategoryProducts(use(Products), category)
-    : DisplayObj.getAllCategories(use(Products));
-&nbsp;
-  if (displayItems.length == 0)
-<span class="branch-0 cbranch-no" title="branch not covered" >    return &lt;ErrorPage message={`Category "${category}" could not be found`} /&gt;;</span>
-&nbsp;
+const DisplayItem = ({ obj }) =&gt; {
   return (
-    &lt;&gt;
-      &lt;h1&gt;{category ? DisplayObj.capitalise(category) : "Categories"}&lt;/h1&gt;
-      &lt;DisplayContainer displayItems={displayItems} /&gt;
-    &lt;/&gt;
+    &lt;Link to={obj.link} key={obj.id} className="product"&gt;
+      &lt;div className="product-img"&gt;
+        &lt;img src={obj.image} alt={obj.title} /&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;div id="title"&gt;{obj.title}&lt;/div&gt;
+        {obj.price &amp;&amp; &lt;div&gt;{obj.price}&lt;/div&gt;}
+      &lt;/div&gt;
+    &lt;/Link&gt;
   );
-}
+};
+&nbsp;
+export default memo(DisplayItem);
+&nbsp;
+DisplayItem.propTypes = {
+  obj: PropTypes.instanceOf(DisplayObj),
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
