@@ -6,7 +6,11 @@ export default function ErrorPage({ message }) {
     <div className={`flex-column-center gap-1rem ${classes.container}`}>
       <h1>Something went wrong!</h1>
 
-      <img src="/error.jpg" alt="Page Not Found" className={classes.image} />
+      <img
+        src="/ShoppingPage/error.jpg"
+        alt="Page Not Found"
+        className={classes.image}
+      />
 
       <p>{message}</p>
     </div>
