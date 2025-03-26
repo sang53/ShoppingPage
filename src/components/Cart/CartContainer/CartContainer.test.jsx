@@ -5,6 +5,7 @@ import {
   CartReducer,
 } from "../../../contexts/CartContext/CartContext";
 import CartContainer from "./CartContainer";
+import { mockFetch } from "../../../test/utils/utils";
 
 vi.mock("../CartProduct/CartProduct", () => ({
   default: ({ id, quantity }) => (
@@ -50,3 +51,11 @@ test("remove all button", async () => {
     }
   `);
 });
+
+test("check out all button", async () => {
+  const { mockDispatch } = renderCartContainer(mockCart);
+  mockFetch();
+  await user.click(screen.getByRole("button", { name: /checkout/i }));
+  expect(mockDispatch).toHaveBeenCalledExactlyOnceWith({ type: "reset" });
+});
+3;

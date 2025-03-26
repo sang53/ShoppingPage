@@ -38,9 +38,46 @@ test("product displayed as expected", () => {
   expect(container).toMatchSnapshot();
 });
 
-describe("sorts into order", () => {
-  test("default order category", () => {
+describe("display sorted products in order", () => {
+  test("default order by category asc", () => {
     renderProducts();
+    expect(
+      screen.getAllByTestId("title").map((element) => element.textContent)
+    ).toMatchSnapshot();
+  });
+  test("default order by category desc", async () => {
+    renderProducts();
+    await user.click(screen.getByRole("button"));
+    expect(
+      screen.getAllByTestId("title").map((element) => element.textContent)
+    ).toMatchSnapshot();
+  });
+  test("alphabetic order asc", async () => {
+    renderProducts();
+    await user.selectOptions(screen.getByRole("combobox"), "alpha");
+    expect(
+      screen.getAllByTestId("title").map((element) => element.textContent)
+    ).toMatchSnapshot();
+  });
+  test("alphabetic order desc", async () => {
+    renderProducts();
+    await user.selectOptions(screen.getByRole("combobox"), "alpha");
+    await user.click(screen.getByRole("button"));
+    expect(
+      screen.getAllByTestId("title").map((element) => element.textContent)
+    ).toMatchSnapshot();
+  });
+  test("price order asc", async () => {
+    renderProducts();
+    await user.selectOptions(screen.getByRole("combobox"), "price");
+    expect(
+      screen.getAllByTestId("title").map((element) => element.textContent)
+    ).toMatchSnapshot();
+  });
+  test("price order desc", async () => {
+    renderProducts();
+    await user.selectOptions(screen.getByRole("combobox"), "price");
+    await user.click(screen.getByRole("button"));
     expect(
       screen.getAllByTestId("title").map((element) => element.textContent)
     ).toMatchSnapshot();

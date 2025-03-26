@@ -1,5 +1,155 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`display sorted products in order > alphabetic order asc 1`] = `
+[
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Mens Casual Slim Fit",
+  "Mens Cotton Jacket",
+  "Opna Women's Short Sleeve Moisture",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "Solid Gold Petite Micropave ",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "White Gold Plated Princess",
+]
+`;
+
+exports[`display sorted products in order > alphabetic order desc 1`] = `
+[
+  "White Gold Plated Princess",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "Solid Gold Petite Micropave ",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "Opna Women's Short Sleeve Moisture",
+  "Mens Cotton Jacket",
+  "Mens Casual Slim Fit",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+]
+`;
+
+exports[`display sorted products in order > default order by category asc 1`] = `
+[
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Mens Cotton Jacket",
+  "Mens Casual Slim Fit",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Solid Gold Petite Micropave ",
+  "White Gold Plated Princess",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Opna Women's Short Sleeve Moisture",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+]
+`;
+
+exports[`display sorted products in order > default order by category desc 1`] = `
+[
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+  "Opna Women's Short Sleeve Moisture",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "White Gold Plated Princess",
+  "Solid Gold Petite Micropave ",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Mens Casual Slim Fit",
+  "Mens Cotton Jacket",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+]
+`;
+
+exports[`display sorted products in order > price order asc 1`] = `
+[
+  "Opna Women's Short Sleeve Moisture",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "White Gold Plated Princess",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+  "Mens Casual Slim Fit",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "Mens Cotton Jacket",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "Solid Gold Petite Micropave ",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+]
+`;
+
+exports[`display sorted products in order > price order desc 1`] = `
+[
+  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+  "Solid Gold Petite Micropave ",
+  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+  "Mens Cotton Jacket",
+  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+  "Mens Casual Premium Slim Fit T-Shirts ",
+  "Mens Casual Slim Fit",
+  "DANVOUY Womens T Shirt Casual Cotton Short",
+  "Pierced Owl Rose Gold Plated Stainless Steel Double",
+  "White Gold Plated Princess",
+  "MBJ Women's Solid Short Sleeve Boat Neck V ",
+  "Opna Women's Short Sleeve Moisture",
+]
+`;
+
 exports[`product displayed as expected 1`] = `
 <div>
   <h1>
@@ -60,29 +210,4 @@ exports[`product displayed as expected 1`] = `
     </div>
   </div>
 </div>
-`;
-
-exports[`sorts into order > default order category 1`] = `
-[
-  "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-  "Mens Casual Premium Slim Fit T-Shirts ",
-  "Mens Cotton Jacket",
-  "Mens Casual Slim Fit",
-  "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-  "Solid Gold Petite Micropave ",
-  "White Gold Plated Princess",
-  "Pierced Owl Rose Gold Plated Stainless Steel Double",
-  "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-  "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-  "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-  "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-  "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-  "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-  "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-  "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-  "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-  "MBJ Women's Solid Short Sleeve Boat Neck V ",
-  "Opna Women's Short Sleeve Moisture",
-  "DANVOUY Womens T Shirt Casual Cotton Short",
-]
 `;
