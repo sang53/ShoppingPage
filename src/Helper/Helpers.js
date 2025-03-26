@@ -48,7 +48,9 @@ export async function checkout(button, cart, cartDispatch) {
   switch (response.status) {
     case 200:
       console.log("Success");
-      cartDispatch({ type: "reset" });
+      if (Object.keys(cart).length == 1)
+        cartDispatch({ type: "set", id: Object.keys(cart)[0], quantity: 0 });
+      else cartDispatch({ type: "reset" });
       break;
     case 400:
       console.error("Error: Invalid Cart or Products");

@@ -5,6 +5,7 @@ import CartProduct from "./CartProduct";
 import { describe, expect, test, vi } from "vitest";
 import { mockProducts } from "../../../test/utils/mockProducts";
 import { MemoryRouter } from "react-router";
+import { mockFetch } from "../../../test/utils/utils";
 
 function renderCartProduct(id = 1, quantity = 3) {
   const mockDispatch = vi.fn();
@@ -134,4 +135,15 @@ test("remove button", async () => {
       "type": "set",
     }
   `);
+});
+
+test("checkout button", async () => {
+  const { mockDispatch } = renderCartProduct();
+  mockFetch();
+  await user.click(screen.getByRole("button", { name: /check/i }));
+  expect(mockDispatch).toHaveBeenCalledExactlyOnceWith({
+    type: "set",
+    id: "1",
+    quantity: 0,
+  });
 });
