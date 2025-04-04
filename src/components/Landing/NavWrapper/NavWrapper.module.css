@@ -10,5 +10,5 @@
   margin-block: auto;
   flex: 0 1 auto;
   min-height: 400px;
-  height: 70vh;
+  max-height: 60vh;
 }
