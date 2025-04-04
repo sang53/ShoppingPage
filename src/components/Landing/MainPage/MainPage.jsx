@@ -3,11 +3,9 @@ import classes from "./MainPage.module.css";
 
 export default function MainPage() {
   return (
-    <>
+    <div className={`flex-column-center ${classes.container}`}>
       <div
-        className={
-          "flex-column-center gap-1rem text-center " + classes.container
-        }
+        className={`flex-column-center gap-1rem text-center ${classes.text}`}
       >
         <h1>Welcome to my Shopping Page!</h1>
         <p>Feel free to browse by category or product!</p>
@@ -18,6 +16,6 @@ export default function MainPage() {
         <p>Here are some random products to view below!</p>
       </div>
       <Carousel />
-    </>
+    </div>
   );
 }

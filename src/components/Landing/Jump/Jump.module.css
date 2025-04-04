@@ -1,14 +1,10 @@
 .jumpContainer {
-  position: sticky;
-  right: 50%;
-  top: 100%;
-  transform: translate(50%, 80%);
-  align-self: center;
-  gap: 1rem;
-
+  width: 30vw;
+  min-width: 400px;
+  justify-content: space-around;
   background-color: var(--jump-container);
 
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 30px;
 
   opacity: 0.6;
@@ -16,10 +12,6 @@
 
   &:hover {
     opacity: 0.8;
-  }
-
-  @media (max-width: 750px) {
-    gap: 0.5rem;
   }
 }
 

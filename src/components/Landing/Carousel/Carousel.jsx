@@ -2,7 +2,6 @@ import { use, useEffect, useMemo, useState } from "react";
 import { Products } from "../../../contexts/Data/DataContext";
 import { Link } from "react-router";
 import PropTypes from "prop-types";
-import classes from "./Carousel.module.css";
 import NavWrapper from "../NavWrapper/NavWrapper";
 
 function getRandomIds(max, num) {
@@ -38,11 +37,9 @@ export default function Carousel({ displayNum = 11 }) {
   if (carouselIdxs.length === 0) return <div>Loading...</div>;
 
   return (
-    <div className={`flex gap-1rem relative ${classes.carousel}`} id="carousel">
-      <NavWrapper startIdx={startIdx} displayNum={displayNum}>
-        {carouselProducts}
-      </NavWrapper>
-    </div>
+    <NavWrapper startIdx={startIdx} displayNum={displayNum}>
+      {carouselProducts}
+    </NavWrapper>
   );
 }
 

@@ -1,0 +1,14 @@
+.carousel {
+  overflow: hidden;
+  max-width: 100vw;
+  will-change: scroll-position;
+  background-color: var(--carousel-bgc);
+  padding-block: 2rem;
+}
+
+.container {
+  margin-block: auto;
+  flex: 0 1 auto;
+  min-height: 400px;
+  height: 70vh;
+}

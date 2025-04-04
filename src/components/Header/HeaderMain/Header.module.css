@@ -12,7 +12,6 @@
   background-color: var(--header-bgc);
   position: sticky;
   top: 0;
-  margin-bottom: 2rem;
 
   > div {
     justify-content: space-evenly;

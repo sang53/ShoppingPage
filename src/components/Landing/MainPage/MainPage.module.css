@@ -1,3 +1,7 @@
+.text {
+  margin: 1rem;
+}
+
 .container {
-  margin: 5vh;
+  height: 70%;
 }
