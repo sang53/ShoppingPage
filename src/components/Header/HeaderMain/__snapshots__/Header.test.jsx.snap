@@ -11,7 +11,7 @@ exports[`Header elements display as expected 1`] = `
       <h1
         class="_heading_218396"
       >
-        Shopping Project
+        Shopping Page
       </h1>
       <nav
         data-testid="mock-navbar"
