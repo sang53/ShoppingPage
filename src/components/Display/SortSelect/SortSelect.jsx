@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
+import classes from "./SortSelect.module.css";
 
 export default function SortSelect({ by, order, setSort }) {
   return (
-    <div>
+    <div className={classes.sortContainer}>
       <select onChange={(e) => setSort([e.target.value, "asc"])} value={by}>
         <option value="cat">Category</option>
         <option value="alpha">Alphabet</option>

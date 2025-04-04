@@ -107,13 +107,12 @@ h6 {
   --button-border: #aaaaaa;
   --button-shadow: 0px 0px 3px #ebc69f;
 
-  font-size: 24px;
   font-family: "Raleway", system-ui, sans-serif;
   font-weight: 500;
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1920px) {
   :root {
     font-size: 20px;
   }
